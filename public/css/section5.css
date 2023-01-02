@@ -11,7 +11,7 @@
   padding: 100px 0 0px;
 }
 
-.section5 .contents-box > article {
+.section5 .contents-box>article {
   z-index: 1;
   width: 100%;
 }
@@ -25,7 +25,7 @@
 
 .section5 .side-bg img {
   width: 40%;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .section5 h2 {
@@ -59,7 +59,7 @@
 .section5 .font-box p {
   height: 31px;
   margin-top: 0px;
-  color: #858484;
+  color: #666;
 }
 
 .section5 .font-box p::after {
@@ -79,6 +79,7 @@
   transform: translateY(0%);
   content: '';
 }
+
 .section5 .swiper-slide.swiper-slide-active::after {
   opacity: 1;
   transform: translateY(-10%);
@@ -155,25 +156,29 @@
   top: 90px;
   right: 0;
 }
+
 .bottle2 {
   top: 210px;
   right: 180px;
 }
+
 .bottle3 {
   top: 370px;
   right: 40px;
 }
+
 .bottle4 {
   right: 260px;
   bottom: 140px;
 }
+
 .bottle5 {
   right: 500px;
   bottom: 30px;
 }
 
-@media screen and (max-width: 1600px) {
-}
+@media screen and (max-width: 1600px) {}
+
 @media screen and (max-width: 1200px) {
   .section5 h2 {
     font-size: 20px;
@@ -208,18 +213,22 @@
   .bottle1 {
     top: 200px;
   }
+
   .bottle2 {
     top: 330px;
     right: 130px;
   }
+
   .bottle3 {
     top: 450px;
     right: 10px;
   }
+
   .bottle4 {
     right: 160px;
     bottom: 140px;
   }
+
   .bottle5 {
     right: 360px;
     bottom: 30px;
@@ -230,6 +239,7 @@
   .section5 .area {
     padding: 0;
   }
+
   .section5 h2 {
     font-size: 20px;
   }
@@ -261,6 +271,7 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .section5 .road {
     display: none;

@@ -8,7 +8,6 @@ footer {
 
 .footer__wrap {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100%;
@@ -32,12 +31,13 @@ footer {
 }
 
 /* footer 가운데 컨텐츠 */
-.footer__text {
+footer .footer__text {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.footer__text > ul > .en {
+.footer__text>ul>.en {
   margin-bottom: 15px;
 }
 
@@ -67,7 +67,7 @@ footer {
   width: 100%;
 }
 
-.footer__SNS > div {
+.footer__SNS>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +80,7 @@ footer {
   box-sizing: border-box;
 }
 
-.footer__SNS > div > p {
+.footer__SNS>div>p {
   display: block;
   margin-left: 10px;
 }
@@ -95,7 +95,7 @@ footer {
   background-size: cover;
 }
 
-.footer__SNS > .facebook > p {
+.footer__SNS>.facebook>p {
   margin-left: 20px;
 }
 
@@ -107,7 +107,7 @@ footer {
   width: 100%;
 }
 
-.insta > i {
+.insta>i {
   font-size: 27px;
 }
 
@@ -134,7 +134,7 @@ footer {
   background-size: cover;
 }
 
-.QR > p {
+.QR>p {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 600;
@@ -164,8 +164,7 @@ fp-enabled {
   }
 }
 
-@media (max-width: 1080px) {
-}
+@media (max-width: 1080px) {}
 
 @media (max-width: 768px) {
   .QR {
@@ -173,11 +172,11 @@ fp-enabled {
     box-sizing: border-box;
   }
 
-  .QR > p {
+  .QR>p {
     font-size: 12px;
   }
 
-  .footer__SNS > div {
+  .footer__SNS>div {
     font-size: 12px;
   }
 
@@ -212,30 +211,38 @@ fp-enabled {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer__SNS > div > p {
+
+  .footer__SNS>div>p {
     font-size: 12px;
   }
+
   .footer__joinMore {
     display: flex;
     flex-direction: column;
   }
-  .footer__SNS > div {
+
+  .footer__SNS>div {
     width: calc(50% - 5px);
   }
+
   .insta {
     margin: 0;
     height: 50px;
   }
+
   .facebook {
     margin: 0;
   }
+
   .QR {
     margin: 10px 0 0 0;
   }
-  .footer__SNS > .facebook > p {
+
+  .footer__SNS>.facebook>p {
     margin-left: 10px;
   }
-  .footer__SNS > div > p > span {
+
+  .footer__SNS>div>p>span {
     display: none;
   }
 }
