@@ -25,39 +25,48 @@ h2 {
   .w1640 {
     width: 100%;
   }
-  #manu .manufacture-section__wrap > article > h1 {
+
+  #manu .manufacture-section__wrap>article>h1 {
     font-size: 36px;
   }
-  #manu .manufacture-section__wrap > article > h2 {
+
+  #manu .manufacture-section__wrap>article>h2 {
     font-size: 20px;
   }
-  #manu .manufacture-section__wrap > article > p {
+
+  #manu .manufacture-section__wrap>article>p {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  #manu .manufacture-section__wrap > article > h1 {
+  #manu .manufacture-section__wrap>article>h1 {
     font-size: 35px;
   }
-  #manu .manufacture-section__wrap > article > h2 {
+
+  #manu .manufacture-section__wrap>article>h2 {
     font-size: 15px;
   }
-  #manu .manufacture-section__wrap > article > p {
+
+  #manu .manufacture-section__wrap>article>p {
     font-size: 14px;
   }
 }
+
 @media (max-width: 465px) {
-  #manu .manufacture-section__wrap > article > h1 {
+  #manu .manufacture-section__wrap>article>h1 {
     font-size: 26px;
   }
-  #manu .manufacture-section__wrap > article > h2 {
+
+  #manu .manufacture-section__wrap>article>h2 {
     font-size: 14px;
   }
-  #manu .manufacture-section__wrap > article > p {
+
+  #manu .manufacture-section__wrap>article>p {
     font-size: 12px;
   }
-  .atech > article > h1 {
+
+  .atech>article>h1 {
     font-size: 26px;
   }
 }
@@ -77,25 +86,28 @@ main {
 #manu .manufacture-section__wrap {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding: 150px 0;
   border-bottom: 1px solid rgba(193, 190, 174, 0.8);
+  padding: 150px 0;
   box-sizing: border-box;
-  /* position: relative; */
 }
 
-#manu .manufacture-section__wrap.section3 {
+/* #manu .manufacture-section__wrap.section3 {
   border-top: 1px solid rgba(193, 190, 174, 0.8);
+} */
+
+#manu .manufacture-section__wrap.section2 {
+  border-bottom: transparent;
 }
 
 #manu .manufacture-section__wrap.section7 {
   border-bottom: transparent;
 }
 
-#manu .manufacture-section__wrap > * {
-  z-index: 5000;
+#manu .manufacture-section__wrap>* {
+  /* z-index: 5000; */
 }
 
 @media (max-width: 1200px) {
@@ -108,36 +120,36 @@ main {
 }
 
 /* 텍스트 굵기 */
-#manu .manufacture-section__wrap > article > h1 {
-  margin: 54px 0;
+#manu .manufacture-section__wrap>article>h1 {
+  margin: 0px 0 30px;
   font-weight: bold;
   color: #333;
 }
 
-#manu .manufacture-section__wrap > article > h2 {
+#manu .manufacture-section__wrap>article>h2 {
   font-weight: bold;
   color: #333;
 }
 
-#manu .manufacture-section__wrap > article > p {
-  font-weight: 500;
+#manu .manufacture-section__wrap>article>p {
+  font-weight: 400;
   color: #333;
 }
 
 @media (max-width: 1200px) {
-  #manu .manufacture-section__wrap > article {
+  #manu .manufacture-section__wrap>article {
     text-align: center;
   }
 
-  #manu .manufacture-section__wrap > article > h1 {
+  #manu .manufacture-section__wrap>article>h1 {
     margin: 30px 0;
   }
 }
 
 /* 사진 */
 #manu .manufacture-section__img {
-  width: 600px;
-  height: 400px;
+  width: 53%;
+  padding-bottom: 30%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -167,7 +179,12 @@ main {
 /* #manu .manufacture-section__wrap.section2 {
   position: relative;
 } */
+#manu .manufacture-section2__txt {
+  width: 45%;
+}
+
 #manu .manufacture-section2__img {
+  width: 53%;
   background-image: url(../img/ssfw.jpg);
 }
 
@@ -177,14 +194,13 @@ main {
 
 /* 섹션3 */
 #manu .manufacture-section3__img {
-  width: 561px;
-  height: 561px;
   background-image: url(../img/sub-sec3.jpg);
+  background-position: bottom;
 }
 
-/* #manu .manufacture-section__wrap.section3 {
-  position: relative;
-} */
+
+
+
 @media (max-width: 768px) {
   #manu .manufacture-section3__img {
     width: 361px;
@@ -271,15 +287,15 @@ main {
 }
 
 #manu .atech {
-  z-index: 9999;
+  /* z-index: 9999; */
   text-align: center;
 }
 
 #manu .atech--bg {
-  z-index: 9999;
+  /* z-index: 9999; */
   width: 1200px;
   height: 400px;
-  margin: 100px auto;
+  margin-top: 50px;
   background-image: url(../img/atech1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -288,28 +304,25 @@ main {
 }
 
 /* 텍스트 굵기 */
-#manu .atech > article > h1 {
-  margin: 54px 0;
+#manu .atech>article>h1 {
+  margin: 0 0 30px;
   font-weight: bold;
   color: #333;
 }
 
-#manu .atech > article > h2 {
+#manu .atech>article>h2 {
   font-weight: bold;
   color: #333;
 }
 
-#manu .atech > article > p {
-  font-weight: 500;
-  color: #333;
-}
+
 
 @media (max-width: 1200px) {
-  #manu .atech > article {
+  #manu .atech>article {
     text-align: center;
   }
 
-  #manu .atech > article > h1 {
+  #manu .atech>article>h1 {
     margin: 30px 0;
   }
 
@@ -336,27 +349,27 @@ main {
 
 /* 보리 */
 #manu .bori {
-  width: 300px;
-  height: 300px;
+  width: 20%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   transition: all 0.3s;
 }
 
-#manu .bori > img {
+#manu .bori>img {
   display: block;
   width: 100%;
   height: auto;
   height: 100%;
-  opacity: 50%;
+  opacity: 0.2;
   transition: all 0.3s;
 }
 
 #manu .first-bori {
+  width: 15%;
   position: absolute;
-  top: 0;
-  left: -20px;
+  top: 50px;
+
   z-index: 1;
   transition: all 0.3s;
 }
@@ -364,12 +377,13 @@ main {
 #manu .second-bori {
   display: block;
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   z-index: 1;
 }
 
 #manu .third-bori {
+  width: 15%;
   position: absolute;
   top: 0;
   left: -20px;
@@ -377,21 +391,24 @@ main {
   transition: all 0.3s;
 }
 
-#manu .third-bori > img {
+#manu .third-bori>img {
   transform: rotate(90deg);
   transform: scaleX(-1);
   filter: FlipH;
 }
 
 #manu .fourth-bori {
+  width: 15%;
   position: absolute;
   top: 0;
   right: 0px;
   z-index: 1;
   transition: all 0.3s;
+
 }
 
 #manu .fivth-bori {
+  width: 15%;
   position: absolute;
   top: 0;
   left: 0px;
@@ -413,6 +430,7 @@ main {
     height: 150px;
   }
 }
+
 @media (max-width: 465px) {
   #manu .manufacture-section__img {
     width: 300px;
@@ -420,6 +438,7 @@ main {
     margin-top: 50px;
   }
 }
+
 @media (max-width: 365px) {
   #manu .manufacture-section__img {
     width: 250px;
