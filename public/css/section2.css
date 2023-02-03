@@ -6,6 +6,10 @@ body {
   position: relative;
 }
 
+.m15 {
+  margin-bottom: 15px;
+}
+
 .w1600 {
   max-width: 1600px;
   margin: 0 auto;
